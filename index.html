@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>so.suic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #000000;
+      color: #e5e5e5;
+       font-family: "Lora", serif;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center">
+
+  <div class="w-full max-w-2xl px-4 py-8 flex flex-col items-center">
+
+    <h1 class="text-2xl md:text-3xl tracking-widest text-center mb-6 font-light">
+      so.suic
+    </h1>
+
+   <nav class="w-full border-t border-b border-neutral-800 py-2 mb-6">
+  <ul class="flex justify-center items-center space-x-6 text-xs md:text-sm tracking-widest uppercase text-neutral-300">
+    <li><a href="index.html" class="hover:text-white transition">HOME</a></li>
+    <li><a href="about.html" class="hover:text-white transition">ABOUT</a></li>
+    <li><a href="lyrics.html" class="hover:text-white transition">LYRICS</a></li>
+    <li><a href="photo.html" class="hover:text-white transition">PHOTO</a></li>
+  </ul>
+</nav>
+
+    <main id="home" class="w-full relative flex items-center justify-center">
+      <div class="w-full aspect-[4/3] bg-neutral-900 border border-neutral-900 relative overflow-hidden flex items-center justify-center">
+        <img 
+          src="images/cover-EP.jpg" 
+          alt="so.suic visual" 
+          class="w-full h-full object-cover grayscale contrast-125 opacity-90"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+        <div class="hidden absolute inset-0 items-center justify-center text-neutral-600 text-xs tracking-widest uppercase">
+          [ Simpan foto di images/hero-cover.jpg ]
+        </div>
+
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <h2 class="text-2xl md:text-4xl tracking-widest text-white text-center px-4 drop-shadow-md">
+            (Mr.Ry)Mystery
+          </h2>
+        </div>
+      </div>
+    </main>
+    <!-- LISTEN / SMART LINK SECTION -->
+<section id="lore" class="w-full mt-8 flex flex-col items-center border-t border-neutral-900 pt-8">
+  <a 
+    href="https://sndo.ffm.to/rpq22zo" 
+    target="_blank" 
+    class="text-xs md:text-sm tracking-widest uppercase text-neutral-300 hover:text-white transition underline underline-offset-8 border border-neutral-800 px-6 py-3 hover:border-neutral-500"
+  >
+    LISTEN ON ALL PLATFORMS ↗
+  </a>
+</section>
+
+<footer class="w-full mt-20 pt-6 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center text-xs tracking-widest text-neutral-600 uppercase gap-2 md:gap-0">
+  
+  <a href="https://instagram.com/so.suic" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-400 transition">
+    INSTAGRAM
+  </a>
+
+  <div>
+    © 2026 SO.SUIC
+  </div>
+
+  <div>
+    DIY
+  </div>
+
+</footer>
+
+  </div>
+
+</body>
+</html>
