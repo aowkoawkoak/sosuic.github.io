@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,248 +8,263 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
   <style>
-    body { background-color: #000000; color: #e5e5e5; font-family: "Lora", serif; }
+    body {
+      background-color: #000000;
+      color: #e5e5e5;
+      font-family: "Lora", serif;
+    }
   </style>
 </head>
+
 <body class="antialiased min-h-screen flex flex-col items-center">
 
   <div class="w-full max-w-6xl px-6 py-8 flex flex-col items-center">
 
-    
+
     <h1 class="text-2xl md:text-3xl tracking-widest text-center mb-6 font-light">
       <a href="index.html">so.suic</a>
     </h1>
 
-  
+
     <nav class="w-full border-t border-b border-neutral-800 py-2 mb-12">
-      <ul class="flex justify-center items-center space-x-6 text-xs md:text-sm tracking-widest uppercase text-neutral-300">
+      <ul
+        class="flex justify-center items-center space-x-6 text-xs md:text-sm tracking-widest uppercase text-neutral-300">
         <li><a href="index.html" class="hover:text-white transition">HOME</a></li>
         <li><a href="about.html" class="hover:text-white transition">ABOUT</a></li>
+        <li><a href="discography.html" class="hover:text-white transition">DISCOGRAPHY</a></li>
         <li><a href="lyrics.html" class="underline underline-offset-4 text-white transition">LYRICS</a></li>
         <li><a href="photo.html" class="hover:text-white transition">PHOTO</a></li>
       </ul>
     </nav>
 
-   
+
     <main class="w-full py-4">
       <h2 class="text-3xl md:text-4xl font-serif italic text-white mb-10 text-left">Release</h2>
 
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        
-        
+
+
         <div class="flex flex-col items-center text-center">
-          <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">Single (2026)</p>
-          
-          
-          <div onclick="toggleLyrics('release-1')" class="cursor-pointer group overflow-hidden border border-neutral-800 p-1 mb-4 hover:border-white transition duration-300">
-            <img 
-              src="images/cover-sheshame.jpg" 
-              alt="she shame" 
-              class="w-64 h-64 object-cover -120 group-hover:scale-105 transition duration-500"
-              onerror="this.src='https://via.placeholder.com/300/111/fff?text=she+shame'"
-            >
-          </div>
           <h3 class="text-lg font-serif italic text-white mb-1">she shame</h3>
+
+          <div onclick="toggleLyrics('release-1')"
+            class="cursor-pointer group overflow-hidden border border-neutral-800 p-1 mb-4 hover:border-white transition duration-300">
+            <img src="images/cover-sheshame.jpg" alt="she shame"
+              class="w-64 h-64 object-cover -120 group-hover:scale-105 transition duration-500"
+              onerror="this.src='https://via.placeholder.com/300/111/fff?text=she+shame'">
+          </div>
           <p class="text-xs text-neutral-500 italic mb-4">(Click cover to view lyrics)</p>
+          <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">Single (2026)</p>
 
           <div id="release-1" class="hidden w-full max-w-sm mt-4 p-4 border-t border-neutral-900 text-left space-y-6">
             <div>
               <h4 class="text-sm font-semibold text-white tracking-wider uppercase mb-2">01. she shame</h4>
               <p class="text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line">
                 [verse]
-As long as I’m still useful, you’ll keep me around until I starve, you manipulate the world while you keep poisoning your own soul.
+                As long as I’m still useful, you’ll keep me around until I starve, you manipulate the world while you
+                keep poisoning your own soul.
 
-[chorus]
+                [chorus]
 
-Don't worry,
-I won't come out and ruin your little act
+                Don't worry,
+                I won't come out and ruin your little act
 
-I’m too busy swallowing my pride
-after fighting so hard for someone who never give a damn.
+                I’m too busy swallowing my pride
+                after fighting so hard for someone who never give a damn.
 
-[verse]
+                [verse]
 
-All this time, you’ve just been sucking the life and sanity out of me, and now, I’m just locked away in the corner of your shame."
+                All this time, you’ve just been sucking the life and sanity out of me, and now, I’m just locked away in
+                the corner of your shame."
 
-[chorus]
+                [chorus]
 
-Don't worry,
-I won't come out and ruin your little act
+                Don't worry,
+                I won't come out and ruin your little act
 
-I’m too busy swallowing my pride
-after fighting so hard for someone who never give a damn.
+                I’m too busy swallowing my pride
+                after fighting so hard for someone who never give a damn.
               </p>
             </div>
           </div>
         </div>
 
         <div class="flex flex-col items-center text-center">
-          <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">EP (2026)</p>
-          
-          <div onclick="toggleLyrics('release-2')" class="cursor-pointer group overflow-hidden border border-neutral-800 p-1 mb-4 hover:border-white transition duration-300">
-            <img 
-              src="images/cover-EP.jpg" 
-              alt="Upcoming EP" 
-              class="w-64 h-64 object-cover grayscale contrast-120 group-hover:scale-105 transition duration-500"
-              onerror="this.src='https://via.placeholder.com/300/111/fff?text=Upcoming+EP'"
-            >
-          </div>
           <h3 class="text-lg font-serif italic text-white mb-1">(Mr.Ry)Mystery</h3>
+
+          <div onclick="toggleLyrics('release-2')"
+            class="cursor-pointer group overflow-hidden border border-neutral-800 p-1 mb-4 hover:border-white transition duration-300">
+            <img src="images/cover-EP.jpg" alt="Upcoming EP"
+              class="w-64 h-64 object-cover grayscale contrast-120 group-hover:scale-105 transition duration-500"
+              onerror="this.src='https://via.placeholder.com/300/111/fff?text=Upcoming+EP'">
+          </div>
           <p class="text-xs text-neutral-500 italic mb-4">(Click cover to view lyrics)</p>
+          <p class="text-xs uppercase tracking-widest text-neutral-400 mb-3">EP (2026)</p>
 
-<div id="release-2" class="w-full max-w-md mt-6 border-t border-neutral-900 pt-4 text-left space-y-4">
-  
-  <details class="group border-b border-neutral-900 pb-3">
-    <summary class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
-      <span>01. DREAM</span>
-      <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
-    </summary>
-    <div class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
-(Whispered/Spoken word)
-"Midnight... it's been a long night."
-"The ceiling looks different today."
+          <div id="release-2" class="hidden w-full max-w-md mt-6 border-t border-neutral-900 pt-4 text-left space-y-4">
 
-(Verse)
-Before the curtain falls...
-Before the colors bleed...
-I’m just writing down the things I don't want to be.
+            <details class="group border-b border-neutral-900 pb-3">
+              <summary
+                class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
+                <span>01. DREAM</span>
+                <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
+              </summary>
+              <div
+                class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
+                (Whispered/Spoken word)
+                "Midnight... it's been a long night."
+                "The ceiling looks different today."
 
-(Chorus)
-I’m making a list of the ghosts in this room
-Starting with the one...
-The one who looks like me.
-then there is
-The one who always smiles,
-The one who does nothing all day,
-The one who can never decide,
-The one who is born to lose,
-And the one... who just wants to be nothing
-    </div>
-  </details>
+                (Verse)
+                Before the curtain falls...
+                Before the colors bleed...
+                I’m just writing down the things I don't want to be.
 
-  <details class="group border-b border-neutral-900 pb-3">
-    <summary class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
-      <span>02. BROKEN NEEDLE</span>
-      <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
-    </summary>
-    <div class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
-[Verse 1]
-Once again, the vision returns
-Monochrome, with a layer of blue
-Making my voice hum in circles
-And my hair, a mess of shadows
+                (Chorus)
+                I’m making a list of the ghosts in this room
+                Starting with the one...
+                The one who looks like me.
+                then there is
+                The one who always smiles,
+                The one who does nothing all day,
+                The one who can never decide,
+                The one who is born to lose,
+                And the one... who just wants to be nothing
+              </div>
+            </details>
 
-[Verse 2]
-Just searching for someone to blame
-Dancing with a heart, no corrections made
-In this very second, I feel it...
-Time has stopped at the broken needle
+            <details class="group border-b border-neutral-900 pb-3">
+              <summary
+                class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
+                <span>02. BROKEN NEEDLE</span>
+                <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
+              </summary>
+              <div
+                class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
+                [Verse 1]
+                Once again, the vision returns
+                Monochrome, with a layer of blue
+                Making my voice hum in circles
+                And my hair, a mess of shadows
 
-[Bridge]
-(Time has stopped...)
-(At the broken needle...)
+                [Verse 2]
+                Just searching for someone to blame
+                Dancing with a heart, no corrections made
+                In this very second, I feel it...
+                Time has stopped at the broken needle
 
-Hiding behind this mystery
-Trying to rewrite the loyalty
-Look at us now, in this second...
-Time has stopped at your broken needle
+                [Bridge]
+                (Time has stopped...)
+                (At the broken needle...)
 
-fade away again
-i know i cant go home
-You curse my freezing night
-drown in your mystery
-    </div>
-  </details>
-  <details class="group border-b border-neutral-900 pb-3">
-    <summary class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
-      <span>03. PART 1: BLOOM</span>
-      <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
-    </summary>
-    <div class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
-How are you lately?
-Is your world brighter now?
-I heard your plans are turning out fine,
-It’s good to see you finally smile,
-Finding everything you wanted.   
+                Hiding behind this mystery
+                Trying to rewrite the loyalty
+                Look at us now, in this second...
+                Time has stopped at your broken needle
 
-So, how’s your new friends?
-Are they kind like I was?
-You look so happy in your pictures
-Life must be easy for you now.
-    </div>
-  </details>
+                fade away again
+                i know i cant go home
+                You curse my freezing night
+                drown in your mystery
+              </div>
+            </details>
+            <details class="group border-b border-neutral-900 pb-3">
+              <summary
+                class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
+                <span>03. PART 1: BLOOM</span>
+                <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
+              </summary>
+              <div
+                class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
+                How are you lately?
+                Is your world brighter now?
+                I heard your plans are turning out fine,
+                It’s good to see you finally smile,
+                Finding everything you wanted.
 
-  <details class="group border-b border-neutral-900 pb-3">
-    <summary class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
-      <span>04. PART 2: GLOOM</span>
-      <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
-    </summary>
-    <div class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
-[Verse 1]
-The sarcastic smile
-With a cliché song
-Damaging the ship's hull
-Letting the cold water win
+                So, how’s your new friends?
+                Are they kind like I was?
+                You look so happy in your pictures
+                Life must be easy for you now.
+              </div>
+            </details>
 
-[Verse 2]
-Proudly upon the branch
-Grief without a wound
-My role altered in a flash
-Surely, a cursed death
+            <details class="group border-b border-neutral-900 pb-3">
+              <summary
+                class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
+                <span>04. PART 2: GLOOM</span>
+                <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
+              </summary>
+              <div
+                class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
+                [Verse 1]
+                The sarcastic smile
+                With a cliché song
+                Damaging the ship's hull
+                Letting the cold water win
 
-[Chorus]
-withered tree
-(what a pity)
-the moonlight
-(always there)
-The drizzling rain
-(im scare)
-she gone
-(I am finally undone)
+                [Verse 2]
+                Proudly upon the branch
+                Grief without a wound
+                My role altered in a flash
+                Surely, a cursed death
 
-[Spoken word]
-That night I met a dying tree,
-where none would dare to tread.
-With just a beer to keep me whole,
-the rain poured overhead.
-Trapped underneath its hollow crown,
-touched by the drifting chill,
+                [Chorus]
+                withered tree
+                (what a pity)
+                the moonlight
+                (always there)
+                The drizzling rain
+                (im scare)
+                she gone
+                (I am finally undone)
 
-at least I had its silent grace
-to keep the darkness still.
-And as I closed my eyes to sleep,
-beneath the weeping sky,
-I gave that lonely, withered tree
-my very last goodbye.
-    </div>
-  </details>
+                [Spoken word]
+                That night I met a dying tree,
+                where none would dare to tread.
+                With just a beer to keep me whole,
+                the rain poured overhead.
+                Trapped underneath its hollow crown,
+                touched by the drifting chill,
 
-  <details class="group border-b border-neutral-900 pb-3">
-    <summary class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
-      <span>05. FINAL CHAPTER</span>
-      <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
-    </summary>
-    <div class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
-There is no warm hug at the end of the story,
-Don't you dare hope for any pretend tears.
-"Swallow the bone," she said at the crossroads,
-Everything that is lacking will be enough.
-It’s not always about the void, but a way to look alive.
+                at least I had its silent grace
+                to keep the darkness still.
+                And as I closed my eyes to sleep,
+                beneath the weeping sky,
+                I gave that lonely, withered tree
+                my very last goodbye.
+              </div>
+            </details>
 
-Your heart is so biased, draining my blood,
-Becoming a catalyst for the collapsing night,
-Chasing catharsis in someone else's plight.
-Watching a new spark that you chose to ignite 
-February 14th, my breakfast left untouched.
-Just another day of swallowing my pride.
-June 17th, breaking even more.
-You celebrate what I am suffering for 
-    </div>
-  </details>
-</div>
+            <details class="group border-b border-neutral-900 pb-3">
+              <summary
+                class="cursor-pointer text-sm font-semibold text-white tracking-wider uppercase flex justify-between items-center select-none hover:text-neutral-400 transition">
+                <span>05. FINAL CHAPTER</span>
+                <span class="text-xs text-neutral-500 group-open:rotate-180 transition-transform duration-200">↓</span>
+              </summary>
+              <div
+                class="mt-4 text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line pl-2 border-l border-neutral-800">
+                There is no warm hug at the end of the story,
+                Don't you dare hope for any pretend tears.
+                "Swallow the bone," she said at the crossroads,
+                Everything that is lacking will be enough.
+                It’s not always about the void, but a way to look alive.
+
+                Your heart is so biased, draining my blood,
+                Becoming a catalyst for the collapsing night,
+                Chasing catharsis in someone else's plight.
+                Watching a new spark that you chose to ignite
+                February 14th, my breakfast left untouched.
+                Just another day of swallowing my pride.
+                June 17th, breaking even more.
+                You celebrate what I am suffering for
+              </div>
+            </details>
+          </div>
     </main>
 
     <footer class="mt-20 text-center text-xs tracking-widest text-neutral-600 uppercase">
@@ -269,4 +285,5 @@ You celebrate what I am suffering for
   </script>
 
 </body>
+
 </html>

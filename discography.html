@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>so.suic — DISCOGRAPHY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #000000;
+      color: #e5e5e5;
+      font-family: "Lora", serif;
+    }
+  </style>
+</head>
+
+<body class="antialiased min-h-screen flex flex-col items-center">
+
+  <!-- WRAPPER UTAMA: Diubah ke max-w-6xl biar area kerja luas -->
+  <div class="w-full max-w-6xl px-6 py-8 flex flex-col items-center">
+
+    <!-- HEADER / BRANDING -->
+    <h1 class="text-2xl md:text-3xl tracking-widest text-center mb-6 font-light">
+      <a href="index.html">so.suic</a>
+    </h1>
+
+    <!-- NAVIGASI -->
+    <nav class="w-full border-t border-b border-neutral-800 py-2 mb-12">
+      <ul
+        class="flex justify-center items-center space-x-6 text-xs md:text-sm tracking-widest uppercase text-neutral-300">
+        <li><a href="index.html" class="hover:text-white transition">HOME</a></li>
+        <li><a href="about.html" class="hover:text-white transition">ABOUT</a></li>
+        <li><a href="discography.html" class="underline underline-offset-4 text-white transition">DISCOGRAPHY</a></li>
+        <li><a href="lyrics.html" class="hover:text-white transition">LYRICS</a></li>
+        <li><a href="photo.html" class="hover:text-white transition">PHOTO</a></li>
+      </ul>
+    </nav>
+
+    <!-- KONTEN DISCOGRAPHY -->
+    <main class="w-full py-4">
+      <div>
+        <div class="space-y-6 text-sm md:text-base leading-relaxed text-neutral-300 font-light text-justify">
+          <h2 class="text-3xl md:text-4xl font-serif italic text-white mb-6">Discography</h2>
+
+          <div class="grid grid-cols-1 gap-6">
+            <!-- SHE SHAME -->
+            <div onclick="toggleDiscography('discography-sheshame')"
+              class="border border-neutral-800 p-4 hover:border-white transition duration-300 cursor-pointer group">
+              <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+
+                <!-- Cover Image (Tetap di kiri) -->
+                <img src="images/cover-sheshame.jpg" alt="she shame"
+                  class="w-32 h-32 object-cover border border-neutral-900 group-hover:border-white transition duration-300"
+                  onerror="this.src='https://via.placeholder.com/128/111/fff?text=Album+Art'">
+
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between">
+                    <div>
+                      <h3 class="text-lg font-serif italic text-white mb-1">she shame</h3>
+                      <p class="text-xs text-neutral-500 italic mb-2">Single • 2026</p>
+                      <p class="text-xs text-neutral-400 line-clamp-2">A track that explores societal pressure and the
+                        struggle to fit in.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="discography-sheshame"
+              class="hidden w-full mt-4 p-4 border-t border-neutral-900 text-left flex flex-col md:flex-row gap-8 items-start justify-between">
+              <div class="flex-1">
+                <h4 class="text-sm font-semibold text-white tracking-wider uppercase mb-4">01. she shame</h4>
+                <p class="text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                reiciendis! Quis, voluptatem blanditiis?
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                reiciendis! Quis, voluptatem blanditiis?
+                </p>
+              </div>
+              <div class="w-full md:w-1/3 flex-shrink-0">
+                <img src="images/t2.png" alt="" class="w-full h-auto object-cover border border-neutral-800">
+              </div>
+            </div>
+
+            <!-- (Mr.Ry)Mystery -->
+            <div onclick="toggleDiscography('discography-mystery')"
+              class="border border-neutral-800 p-4 hover:border-white transition duration-300 cursor-pointer group">
+              <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+                <img src="images/cover-EP.jpg" alt="Upcoming EP"
+                  class="w-32 h-32 object-cover border border-neutral-900 group-hover:border-white transition duration-300 grayscale contrast-120"
+                  onerror="this.src='https://via.placeholder.com/128/111/fff?text=EP+Art'">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-start justify-between">
+                    <div>
+                      <h3 class="text-lg font-serif italic text-white mb-1">(Mr.Ry)Mystery</h3>
+                      <p class="text-xs text-neutral-500 italic mb-2">EP • 2026</p>
+                      <p class="text-xs text-neutral-400 line-clamp-2">A collection of five tracks exploring hidden
+                        feelings and inner thoughts.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ISI EP (Mr.Ry)Mystery -->
+            <div id="discography-mystery" class="hidden w-full mt-4 p-4 border-t border-neutral-900 text-left space-y-4">
+                
+                <details class="group border-b border-neutral-800 pb-3">
+                  <summary class="flex justify-between items-center cursor-pointer text-sm font-semibold text-white tracking-wider uppercase list-none">
+                    01. Dream
+                    <span class="transition group-open:rotate-180 text-neutral-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="mt-4 flex flex-col md:flex-row gap-8 items-start justify-between">
+                    <div class="flex-1">
+                      <p class="text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+                      </p>
+                    </div>
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                      <img src="images/t2.png" alt="" class="w-full h-auto object-cover border border-neutral-800">
+                    </div>
+                  </div>
+                </details>
+
+                <details class="group border-b border-neutral-800 pb-3">
+                  <summary class="flex justify-between items-center cursor-pointer text-sm font-semibold text-white tracking-wider uppercase list-none">
+                    02. Broken Needle
+                    <span class="transition group-open:rotate-180 text-neutral-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="mt-4 flex flex-col md:flex-row gap-8 items-start justify-between">
+                    <div class="flex-1">
+                      <p class="text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+                      </p>
+                    </div>
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                      <img src="images/t3.png" alt="" class="w-full h-auto object-cover border border-neutral-800">
+                    </div>
+                  </div>
+                </details>
+
+                <details class="group border-b border-neutral-800 pb-3">
+                  <summary class="flex justify-between items-center cursor-pointer text-sm font-semibold text-white tracking-wider uppercase list-none">
+                    03. Part 1: Bloom
+                    <span class="transition group-open:rotate-180 text-neutral-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="mt-4 flex flex-col md:flex-row gap-8 items-start justify-between">
+                    <div class="flex-1">
+                      <p class="text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+                      </p>
+                    </div>
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                      <img src="images/t4.png" alt="" class="w-full h-auto object-cover border border-neutral-800">
+                    </div>
+                  </div>
+                </details>
+
+                <details class="group border-b border-neutral-800 pb-3">
+                  <summary class="flex justify-between items-center cursor-pointer text-sm font-semibold text-white tracking-wider uppercase list-none">
+                    04. Part 2: Gloom
+                    <span class="transition group-open:rotate-180 text-neutral-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="mt-4 flex flex-col md:flex-row gap-8 items-start justify-between">
+                    <div class="flex-1">
+                      <p class="text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+                      </p>
+                    </div>
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                      <img src="images/t5.png" alt="" class="w-full h-auto object-cover border border-neutral-800">
+                    </div>
+                  </div>
+                </details>
+
+                <details class="group border-b border-neutral-800 pb-3">
+                  <summary class="flex justify-between items-center cursor-pointer text-sm font-semibold text-white tracking-wider uppercase list-none">
+                    05. Final Chapter
+                    <span class="transition group-open:rotate-180 text-neutral-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="mt-4 flex flex-col md:flex-row gap-8 items-start justify-between">
+                    <div class="flex-1">
+                      <p class="text-xs md:text-sm leading-relaxed text-neutral-300 font-light whitespace-pre-line">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit quia explicabo deleniti laborum
+                      commodi, recusandae error ullam tenetur molestias nesciunt debitis, voluptatem quaerat vel. Facilis,
+                      reiciendis! Quis, voluptatem blanditiis?
+                      </p>
+                    </div>
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                      <img src="images/t6.png" alt="" class="w-full h-auto object-cover border border-neutral-800">
+                    </div>
+                  </div>
+                </details>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-20 text-center text-xs tracking-widest text-neutral-600 uppercase">
+      © 2026 SO.SUIC
+    </footer>
+
+  </div>
+  <script>
+    function toggleDiscography(discographyId) {
+      var discography = document.getElementById(discographyId);
+      if (discography) {
+        discography.classList.toggle('hidden');
+      }
+    }
+  </script>
+</body>
+
+</html>

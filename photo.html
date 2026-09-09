@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
   <style>
     body {
       background-color: #000000;
@@ -16,6 +18,7 @@
     }
   </style>
 </head>
+
 <body class="antialiased min-h-screen flex flex-col items-center">
 
   <div class="w-full max-w-2xl px-4 py-8 flex flex-col items-center">
@@ -24,65 +27,57 @@
     </h1>
 
     <nav class="w-full border-t border-b border-neutral-800 py-2 mb-6">
-      <ul class="flex justify-center items-center space-x-6 text-xs md:text-sm tracking-widest uppercase text-neutral-300">
+      <ul
+        class="flex justify-center items-center space-x-6 text-xs md:text-sm tracking-widest uppercase text-neutral-300">
         <li><a href="index.html" class="hover:text-white transition">HOME</a></li>
         <li><a href="about.html" class="hover:text-white transition">ABOUT</a></li>
+        <li><a href="discography.html" class="hover:text-white transition">DISCOGRAPHY</a></li>
         <li><a href="lyrics.html" class="hover:text-white transition">LYRICS</a></li>
         <li><a href="photo.html" class="underline underline-offset-4 hover:text-white transition">PHOTO</a></li>
       </ul>
     </nav>
 
-  <main class="w-full py-4">
-  <h2 class="text-3xl md:text-4xl font-serif italic text-white mb-10 text-left">Photo</h2>
+    <main class="w-full py-4">
+      <h2 class="text-3xl md:text-4xl font-serif italic text-white mb-10 text-left">Photo</h2>
 
-  <div class="columns-1 sm:columns-2 gap-6 space-y-6">
+      <div class="columns-1 sm:columns-2 gap-6 space-y-6">
 
-    <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
-      <img 
-        src="photos/a0b3466b36456cd9c0d028f56cabcd05.jpg" 
-        alt="so.suic visual" 
-        class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
-        onclick="openModal(this.src)"
-      >
-    </div>
+        <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
+          <img src="photos/a0b3466b36456cd9c0d028f56cabcd05.jpg" alt="so.suic visual"
+            class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
+            onclick="openModal(this.src)">
+        </div>
 
-    <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
-      <img 
-        src="photos/DSCN1970.JPG"
-        alt="so.suic visual" 
-        class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
-        onclick="openModal(this.src)"
-      >
-    </div>
+        <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
+          <img src="photos/DSCN1970.JPG" alt="so.suic visual"
+            class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
+            onclick="openModal(this.src)">
+        </div>
 
-    <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
-      <img 
-        src="photos/b22c0ae6133b7957afadb58c47094eb8.jpg" 
-        alt="so.suic visual" 
-        class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
-        onclick="openModal(this.src)"
-      >
-    </div>
+        <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
+          <img src="photos/b22c0ae6133b7957afadb58c47094eb8.jpg" alt="so.suic visual"
+            class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
+            onclick="openModal(this.src)">
+        </div>
 
-    <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
-      <img 
-        src="photos/DSCN2588.png" 
-        alt="so.suic visual" 
-        class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
-        onclick="openModal(this.src)"
-      >
-    </div>
+        <div class="break-inside-avoid border border-neutral-800 p-1 bg-black">
+          <img src="photos/DSCN2588.png" alt="so.suic visual"
+            class="w-full h-auto object-contain grayscale contrast-120 hover:scale-[1.02] transition duration-300 cursor-pointer"
+            onclick="openModal(this.src)">
+        </div>
 
-  </div>
-</main>
+      </div>
+    </main>
 
     <footer class="mt-12 text-center text-xs tracking-widest text-neutral-600 uppercase">
       © 2026 SO.SUIC
     </footer>
   </div>
-  <div id="imageModal" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4 cursor-pointer" onclick="closeModal()">
+  <div id="imageModal" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4 cursor-pointer"
+    onclick="closeModal()">
     <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center">
-      <img id="modalImg" src="" alt="Fullsize Photo" class="max-h-[85vh] w-auto object-contain border border-neutral-800 grayscale contrast-125">
+      <img id="modalImg" src="" alt="Fullsize Photo"
+        class="max-h-[85vh] w-auto object-contain border border-neutral-800 grayscale contrast-125">
       <p class="mt-4 text-[10px] tracking-widest text-neutral-500 uppercase">
         [ CLICK ANYWHERE TO CLOSE ]
       </p>
@@ -106,4 +101,5 @@
   </script>
 
 </body>
+
 </html>
